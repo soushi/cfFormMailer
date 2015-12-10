@@ -908,7 +908,7 @@ function convertjp($text)
     if(isset($modx->config['output_filter'])&&$modx->config['output_filter']!=='0')
         $toFilter = true;
     else $toFilter = false;
-    if($toFilter) $modx->loadExtension('PHx') or die('Could not load PHx class.');
+    if($toFilter) $modx->loadExtension('MODIFIERS') or die('Could not load MODIFIERS class.');
     
     // 基本プレースホルダ
     $replaceKeys = array_keys($params);
